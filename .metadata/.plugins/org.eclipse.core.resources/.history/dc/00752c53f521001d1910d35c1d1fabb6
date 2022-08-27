@@ -1,0 +1,19 @@
+package com.microservice.habits.dao;
+
+import com.microservice.habits.entities.Habit;
+
+public class HabitDaoImpl implements HabitDao{
+	
+	@Override
+	public Habit getHabitById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void createHabit(Habit habit) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

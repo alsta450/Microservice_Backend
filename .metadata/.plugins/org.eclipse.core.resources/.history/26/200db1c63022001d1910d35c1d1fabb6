@@ -1,0 +1,5 @@
+package com.microservice.habits.proxy;
+
+public interface UserProxy {
+
+}

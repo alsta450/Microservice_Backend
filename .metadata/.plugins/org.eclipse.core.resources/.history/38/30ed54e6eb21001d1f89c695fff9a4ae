@@ -1,0 +1,5 @@
+package com.microservice.habits.dao;
+
+public interface HabitsDAO {
+
+}

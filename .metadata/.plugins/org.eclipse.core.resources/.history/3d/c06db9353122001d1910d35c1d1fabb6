@@ -1,0 +1,8 @@
+package com.microservice.habits.controller;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient
+public class ProxyController {
+
+}

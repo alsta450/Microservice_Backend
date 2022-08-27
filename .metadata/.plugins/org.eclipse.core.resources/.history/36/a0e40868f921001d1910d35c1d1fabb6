@@ -1,0 +1,44 @@
+package com.microservice.habits.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.microservice.habits.entities.Habit;
+import com.microservice.habits.repository.HabitRepository;
+
+@RestController
+public class HabitsController {
+
+	@Autowired
+	private HabitRepository habitRepository;
+	
+	
+	/*
+	@GetMapping("/{user}/habits")
+	public Habit getHabits(@PathVariable Integer user) {
+		Optional<Habit> habit = habitRepository.findById(user);
+		
+		if(habit.isPresent()) {
+			return habit.get();
+		}else {
+			return null;
+		}
+		//return habitRepository.findByUserid(user);
+	}
+	*/
+	@GetMapping("/{user}/habits")
+	public List<Habit> getHabits(@PathVariable Integer user) {
+		
+		return habitRepository.findByUserId(user);
+		
+		
+		//return habitRepository.findByUserid(user);
+	}
+	
+}

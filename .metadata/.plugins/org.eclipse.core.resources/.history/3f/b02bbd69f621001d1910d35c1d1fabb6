@@ -1,0 +1,1 @@
+INSERT INTO habit VALUES(DEFAULT,'Drink Water',3,Null,Null,1)

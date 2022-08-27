@@ -1,0 +1,5 @@
+package com.microservice.habits.controller;
+
+public class HabitsController {
+
+}

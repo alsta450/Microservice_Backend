@@ -1,0 +1,7 @@
+package com.microservice.habits.dao;
+
+import com.microservice.habits.entities.Habit;
+
+public interface HabitsDAO {
+	public Habit getHabitById();
+}

@@ -1,0 +1,8 @@
+spring.jpa.show-sql=true
+spring.h2.console.enabled=true
+spring.jpa.defer-datasource-initialization=true
+jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE
+
+
+spring.application.name=currency-exchange-service
+server.port=8000

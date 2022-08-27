@@ -1,0 +1,23 @@
+package com.microservice.user.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class User {
+	
+	@Id
+	@Column(name="userid")
+	private Integer userId;
+	
+	@Column(name="username")
+	private String username;
+	
+	@Column(name="email")
+	private String email;
+	
+	@Column(name="password")
+	private String password;
+	
+}
